@@ -38,4 +38,12 @@ class CalculatorTests {
 		assertEquals(expectedResult, calculator.add(first, second),
 				() -> first + " + " + second + " should equal " + expectedResult);
 	}
+
+	void subTest(int first, int second, int expectedResult)
+	{
+		Calculator calculator = new Calculator();
+		assertEquals(expectedResult, calculator.sub(first, second),
+				() -> first + " + " + second + " should equal " + expectedResult);
+	}
+
 }
