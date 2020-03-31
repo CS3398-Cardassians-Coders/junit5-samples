@@ -34,7 +34,13 @@ class CalculatorTests {
 		assertEquals(1, calculator.sub(2, 1), "2 - 1 should equal 1");
 	}
 
-	
+	@Test
+	@DisplayName("20 - 1 =19")
+	void subsTwoNumbers()
+	{
+		Calculator calculator = new Calculator();
+		assertEquals(1, calculator.sub(20, 1), "2 - 1 should equal 19");
+	}
 
 
 	@ParameterizedTest(name = "{0} + {1} = {2}")
