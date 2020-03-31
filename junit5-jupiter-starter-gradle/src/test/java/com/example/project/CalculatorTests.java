@@ -26,7 +26,7 @@ class CalculatorTests {
 		assertEquals(2, calculator.add(1, 1), "1 + 1 should equal 2");
 	}
 
-	@TestTwo
+	@Test
 	@DisplayName("2 - 1 = 1")
 	void subsTwoNumbers()
 	{
@@ -34,7 +34,7 @@ class CalculatorTests {
 		assertEquals(1, calculator.sub(2, 1), "2 - 1 should equal 1");
 	}
 
-	@TestTwo
+	@Test
 	@DisplayName("20 - 1 = 19")
 	void subsTwoNumbers()
 	{
@@ -42,7 +42,7 @@ class CalculatorTests {
 		assertEquals(1, calculator.sub(20, 1), "2 - 1 should equal 19");
 	}
 
-	@ParameterizedTestTwo(name = "{0} + {1} = {2}")
+	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({
 			"20,    1,   19",
 			"2,    1,   1",
