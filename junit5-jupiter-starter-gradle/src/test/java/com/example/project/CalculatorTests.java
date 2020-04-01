@@ -42,21 +42,21 @@ class CalculatorTests {
 		assertEquals(1, calculator.sub(20, 1), "2 - 1 should equal 19");
 	}
 
-	@ParameterizedTest(name = "{0} + {1} = {2}")
+	/*@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({
 			"20,    1,   19",
 			"2,    1,   1",
 			"40,  30, 10",
 			"18,  10, 8"
-	})
+	})*/
 
-	/*@ParameterizedTest(name = "{0} + {1} = {2}")
+	@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({
 			"0,    1,   1",
 			"1,    2,   3",
 			"49,  51, 100",
 			"1,  100, 101"
-	})*/
+	})
 
 	void add(int first, int second, int expectedResult) {
 		Calculator calculator = new Calculator();
