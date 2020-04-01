@@ -50,13 +50,13 @@ class CalculatorTests {
 			"18,  10, 8"
 	})
 
-	@ParameterizedTest(name = "{0} + {1} = {2}")
+	/*@ParameterizedTest(name = "{0} + {1} = {2}")
 	@CsvSource({
 			"0,    1,   1",
 			"1,    2,   3",
 			"49,  51, 100",
 			"1,  100, 101"
-	})
+	})*/
 
 	void add(int first, int second, int expectedResult) {
 		Calculator calculator = new Calculator();
