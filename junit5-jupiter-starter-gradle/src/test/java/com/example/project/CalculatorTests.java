@@ -28,7 +28,7 @@ class CalculatorTests {
 
 	@Test
 	@DisplayName("2 - 1 = 1")
-	void subsTwoNumbers()
+	void subtractsTwoNumbers()
 	{
 		Calculator calculator = new Calculator();
 		assertEquals(1, calculator.sub(2, 1), "2 - 1 should equal 1");
